@@ -8,6 +8,7 @@
 	<!-- Set viewport so page remains consistently scaled w narrow devices -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/color.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -16,23 +17,33 @@
 </head>
 <body>
     <div id="sidebar">
-        <img src="img/logo.png">
-        this is the sidebar
-        <div>
-            this could be anything
+        <div id="title-wrapper">
+            <img src="img/logo.png">
+            <p>here we have the title and the logo</p>
         </div>
-        <div>
-            this could be anything
+        <div id="playlist-wrapper" class="row-wrapper">
+            <p>here we have the playlists</p>
+            <div id="playlist-disks">
+                insert clickable disks
+            </div>
+            <div id="playlist-currently-playing">
+                insert player
+            </div>
         </div>
-        <div>
-            this could be anything
+        <div id="bottom-sidebar-wrapper" class="row-wrapper">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSft2eM6649vLK5VlEwA6BJR3h-Fe0mPaBiGBgRZjSopevvirg/viewform">
+                <div id="form-link"> insert sticky note image </div>
+            </a>
+            <div id="sticker-sheet">
+                here we have the sticker sheet
+            </div>
         </div>
     </div>
 
     <div id="corkboard-wrapper">
         <div id="corkboard">
             <p>this is the corkboard</p>
-            <img id="space-guy" src="img/space-guy.jpg" alt="space-boy">
+            <img id="space-guy" src="img/space-guy.png" alt="space-boy">
         </div>
         <button id="shuffle-button">shuffle corkboard</button>
     </div>

@@ -1,0 +1,64 @@
+/* personalized color palettes */
+
+body {
+    --main: #465781;
+    --accent: #de76bb;
+    --sub: #7c8fb8;
+    --comp: #749aec;
+    --text: #f5f5f5;
+}
+
+body.grace {
+    --main: #686868;
+    --accent: #de76bb;
+    --sub: #70798d;
+    --comp: #6f95e9;
+    --text: #f5f5f5;
+}
+
+body.maya {
+    --main: #686868;
+    --accent: #de76bb;
+    --sub: #70798d;
+    --comp: #6f95e9;
+    --text: #f5f5f5;
+}
+
+body.philip {
+    --main: #686868;
+    --accent: #de76bb;
+    --sub: #70798d;
+    --comp: #6f95e9;
+    --text: #f5f5f5;
+}
+
+body.ashley {
+    --main: #686868;
+    --accent: #de76bb;
+    --sub: #70798d;
+    --comp: #6f95e9;
+    --text: #f5f5f5;
+}
+
+body.lyssa {
+    --main: #686868;
+    --accent: #de76bb;
+    --sub: #70798d;
+    --comp: #6f95e9;
+    --text: #f5f5f5;
+}
+
+/* coloring */
+body {
+    background-color: var(--main);
+    color: var(--text);
+    transition-duration: 0.5s;
+}
+
+#sidebar {
+    background-color: var(--sub);
+}
+
+#playlist-wrapper {
+    background-color: var(--comp);
+}
