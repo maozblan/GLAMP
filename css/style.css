@@ -50,3 +50,9 @@ body {
 #shuffle-button {
     align-self: flex-end;
 }
+
+#space-guy {
+    width: 50%;
+    max-width: 400px;
+    max-height: 500px;;
+}
