@@ -7,6 +7,16 @@
 let currentlyDragging = false;
 let offsetX, offsetY;
 
+
+
+
+
+
+
+
+// deprecated code (we dont need this functionality)
+// functionality: click and drag imgs
+/*
 // gets bus pass img from html by its id
 const bus_pass = document.getElementById('bus-pass');
 
@@ -39,3 +49,4 @@ document.addEventListener('mouseup', () => {
     // sets dragging state to false when mouse is released
     currentlyDragging = false;
 })
+*/
