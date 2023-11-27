@@ -71,6 +71,7 @@ body {
     height: 100%;
     background-image: url('../img/corkboard.png');
     background-size: 100% 100%;
+    position: relative;
 }
 
 #shuffle-button {
