@@ -76,6 +76,7 @@ body {
     height: 100%;
     background-image: url('../img/corkboard.png');
     background-size: 100% 100%;
+    position: relative;   /* so the pieces don't run away */
 }
 
 #shuffle-button {
@@ -95,33 +96,36 @@ body {
 
 #bus-pass {
     position: absolute;
+    top: 15px;
+    right: 20px;
     width: 100%;
     max-width: 150px;
     max-height: 500px;
-
 }
 
 #participation-ribbon {
     position:absolute;
-    top: 0;
+    top: 10px;
+    left: 5px;
     width: 100%;
     max-width: 200px;
     max-height: 800px;
-     
  }
 
- #concert-polaroid {
+#concert-polaroid {
     position: absolute;
+    bottom: 50px;
+    left: 150px;
     width: 100%;
     max-width: 150px;
     max-height: 500px;
-
 }
 
 #queer-prom {
     position: absolute;
+    top: 50px;
+    right: 150px;
     width: 100%;
     max-width: 400px;
     max-height: 650px;
-
 }
