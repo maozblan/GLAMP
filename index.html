@@ -14,6 +14,8 @@
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script type="text/javascript" src="js/code.js" DEFER></script>
+	<script type="text/javascript" src="js/shuffle.js" DEFER></script>
+	<script type="text/javascript" src="js/disk.js" DEFER></script>
 </head>
 <body>
     <div id="sidebar">
@@ -22,9 +24,12 @@
             <p>here we have the title and the logo</p>
         </div>
         <div id="playlist-wrapper" class="row-wrapper">
-            <p>here we have the playlists</p>
             <div id="playlist-disks">
-                insert clickable disks
+                <div class="disk" id="grace-disk" data-p="grace">grace's disk</div>
+                <div class="disk" id="maya-disk" data-p="maya">maya's disk</div>
+                <div class="disk" id="philip-disk" data-p="philip">philip's disk</div>
+                <div class="disk" id="ashley-disk" data-p="ashley">ashley's disk</div>
+                <div class="disk" id="lyssa-disk" data-p="lyssa">lyssa's disk</div>
             </div>
             <div id="playlist-currently-playing">
                 insert player
