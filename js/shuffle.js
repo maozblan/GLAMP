@@ -30,10 +30,12 @@ jsonData = {
     "3" : {
         "text" : "All these years I was just idly your friend, helping you look for the one. Yet sometimes I wonder if it's selfish to want you all to myself even when I know I cannot even give you the type of love that you look for."
     },
-    "4" : { "Three years ago I had a crush on my across the street neighbor. I observed him for a few weeks before we finally met. I was considering putting my number on a piece of paper and leaving it on his windshield, but luckily the universe had other plans. I ended up needing his help with a rogue homeless man who was harassing my apartment building at the time. We ended up dating and moved in together after 4 months. We are still together to this day 3 and a half years later."
+    "4" : {
+        "text" : "Three years ago I had a crush on my across the street neighbor. I observed him for a few weeks before we finally met. I was considering putting my number on a piece of paper and leaving it on his windshield, but luckily the universe had other plans. I ended up needing his help with a rogue homeless man who was harassing my apartment building at the time. We ended up dating and moved in together after 4 months. We are still together to this day 3 and a half years later."
     },
-    "5" : { "i fell in love with you while reading your favorite book. i think of you every time i see a magnificent tree, a tiny ceramic house, or a seahorse. you set a precedent i will never forget and you only loved me up close for 3 months."
-},
+    "5" : {
+        "text" : "i fell in love with you while reading your favorite book. i think of you every time i see a magnificent tree, a tiny ceramic house, or a seahorse. you set a precedent i will never forget and you only loved me up close for 3 months."
+    }
 };
 
 // corkboard shuffle implementaion
