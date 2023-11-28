@@ -2,21 +2,20 @@
 //Grace Galan, Maya Crolene, Philip Choe, Ashley Huynh, and Lyssa Li 
 //Art101 Fall Quarter 2023 with professor Wes Modes
 
-// fetch the form responses currently stored in reponses.json
 let jsonData;
-$(document).ready(function() {
-    // $.ajax({
-    //     url: 'responses.json',   // path to json file
-    //     dataType: 'json',
-    //     success: function(data) {
-    //     jsonData = data;
-    //     console.log(jsonData);
-    //     },
-    //     error: function(jqXHR, textStatus, errorThrown) {
-    //     console.error('Error loading JSON file:', textStatus, errorThrown);
-    //     }
-    // });
-});
+// $(document).ready(function() {
+//     $.ajax({
+//         url: 'responses.json',   // path to json file
+//         dataType: 'json',
+//         success: function(data) {
+//         jsonData = data;
+//         console.log(jsonData);
+//         },
+//         error: function(jqXHR, textStatus, errorThrown) {
+//         console.error('Error loading JSON file:', textStatus, errorThrown);
+//         }
+//     });
+// });
 // ^^ just says the file can'e be found :(
 
 // literally writing in the json here for now :(
