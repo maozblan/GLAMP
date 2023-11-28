@@ -9,27 +9,27 @@ body {
 }
 
 body.grace {
-    --main: #686868;
-    --accent: #de76bb;
-    --sub: #70798d;
-    --comp: #6f95e9;
-    --text: #f5f5f5;
+    --main: #FFF2F9;
+    --accent: #F33A9A;
+    --sub: #C0F6A6;
+    --comp: #65EC7D;
+    --text: #BD2071;
 }
 
 body.maya {
-    --main: #686868;
-    --accent: #de76bb;
-    --sub: #70798d;
-    --comp: #6f95e9;
-    --text: #f5f5f5;
+    --main: #EFC0C1;
+    --accent: #ADC3CF;
+    --sub: #FDF4DD;
+    --comp: #F5F5F5;
+    --text: #8B1E1A;
 }
 
 body.philip {
-    --main: #686868;
-    --accent: #de76bb;
-    --sub: #70798d;
-    --comp: #6f95e9;
-    --text: #f5f5f5;
+    --main: #A997DF;
+    --accent: #4F517D;
+    --sub: #DDC4DD;
+    --comp: #DCCFEC;
+    --text: #1A3A3A;
 }
 
 body.ashley {
@@ -41,18 +41,18 @@ body.ashley {
 }
 
 body.lyssa {
-    --main: #686868;
-    --accent: #de76bb;
-    --sub: #70798d;
-    --comp: #6f95e9;
-    --text: #f5f5f5;
+    --main: #4D7C8A;
+    --accent: #1B4079;
+    --sub: #7F9C96;
+    --comp: #8FAD8A;
+    --text: #e7f2c5;
 }
 
 /* coloring */
 body {
     background-color: var(--main);
     color: var(--text);
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }
 
 #sidebar {
@@ -61,4 +61,16 @@ body {
 
 #playlist-wrapper {
     background-color: var(--comp);
+}
+
+#playlist-loading {
+    background-color: var(--accent);
+}
+
+.post-it {
+    color: var(--text);
+}
+
+#sidebar,#playlist-wrapper,#corkboard {
+    border: 1.5px solid var(--accent);
 }

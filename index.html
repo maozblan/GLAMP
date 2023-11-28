@@ -16,45 +16,60 @@
 	<script type="text/javascript" src="js/code.js" DEFER></script>
 	<script type="text/javascript" src="js/shuffle.js" DEFER></script>
 	<script type="text/javascript" src="js/disk.js" DEFER></script>
+    <!-- links to fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn:wght@400;700&display=swap">
 </head>
 <body>
     <div id="sidebar">
-        <div id="title-wrapper">
-            <img src="img/logo.png">
-            <p>here we have the title and the logo</p>
-        </div>
         <div id="playlist-wrapper" class="row-wrapper">
-            <div id="playlist-disks">
-                <div class="disk" id="grace-disk" data-p="grace">grace's disk</div>
-                <div class="disk" id="maya-disk" data-p="maya">maya's disk</div>
-                <div class="disk" id="philip-disk" data-p="philip">philip's disk</div>
-                <div class="disk" id="ashley-disk" data-p="ashley">ashley's disk</div>
-                <div class="disk" id="lyssa-disk" data-p="lyssa">lyssa's disk</div>
+            <div id="title-wrapper">
+                <img id="logo" src="img/logo.png">
+                <div class="column-wrapper">
+                    <p>ART101 GROUP 16</p>
+                    <p>Grace, Maya, Philip, Ashley, & Lyssa</p>
+                </div>
             </div>
-            <div id="playlist-currently-playing">
-                insert player
+
+            <div class="current-playlist">
+                <p>select a record from the left to add music</p>
+            </div>
+            <div id="playlist-loading" style="display: none;">
+                <p>loading playlist...</p>
+            </div>
+
+            <div class="disk grace-disk" data-p="grace">
+                <img class="disk-img" src="img/sample-disk.png"/>
+            </div>
+            <div class="disk maya-disk" data-p="maya">
+                <img class="disk-img" src="img/sample-disk.png"/>
+            </div>
+            <div class="disk philip-disk" data-p="philip">
+                <img class="disk-img" src="img/sample-disk.png"/>
+            </div>
+            <div class="disk ashley-disk" data-p="ashley">
+                <img class="disk-img" src="img/sample-disk.png"/>
+            </div>
+            <div class="disk lyssa-disk" data-p="lyssa">
+                <img class="disk-img" src="img/sample-disk.png"/>
             </div>
         </div>
         <div id="bottom-sidebar-wrapper" class="row-wrapper">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSft2eM6649vLK5VlEwA6BJR3h-Fe0mPaBiGBgRZjSopevvirg/viewform">
                 <div id="form-link"> insert sticky note image </div>
             </a>
-            <div id="sticker-sheet">
-                here we have the sticker sheet
-            </div>
+            <div id="sticker-sheet"></div>
         </div>
     </div>
 
     <div id="corkboard-wrapper">
         <div id="corkboard">
-            <p>this is the corkboard</p>
             <div><img id="bus-pass" src="img/bus-pass.png" alt="montebello-bus"></div>
             <div><img id="participation-ribbon" src="img/participation-ribbon.png" alt="participation"></div>
             <div><img id="concert-polaroid" src="img/concert-polaroid.png" alt="lollapalooza"></div>
             <div><img id="queer-prom" src="img/queer-prom-ticket.png" alt="prom-ticket"></div>
 
         </div>
-        <button id="shuffle-button">shuffle corkboard</button>
+        <button id="shuffle-button">get new responses</button>
     </div>
 </body>
 </html>
