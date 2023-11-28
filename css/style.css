@@ -247,3 +247,21 @@ body {
     max-width: 400px;
     max-height: 650px;
 }
+
+#kewpie-moth {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 100%;
+    max-width: 150px;
+    max-height: 500px;
+}
+
+#lacma-ticket {
+    position: absolute;
+    bottom: 50px;
+    right: 75px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 650px;
+}
