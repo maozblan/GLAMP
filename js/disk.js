@@ -2,16 +2,18 @@
 //Grace Galan, Maya Crolene, Philip Choe, Ashley Huynh, and Lyssa Li 
 //Art101 Fall Quarter 2023 with professor Wes Modes
 
+let p;
+
 let spotifyPlaylists = {
-    "grace" : '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2Bex8YgZ74EobhnM1poSVp?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
-    "maya" : '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1BeBLO59Ji3acFnaFpqbtZ?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
-    "philip" : '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2TSOAUJOXI1n7HJulpRsaV?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
-    "ashley" : '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1OVGqSlxvE0d15aaTy8hGy?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
-    "lyssa" : '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6V4FeoCo1qlBFI9LWyM7dI?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+    "grace" : '<iframe id="grace-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2Bex8YgZ74EobhnM1poSVp?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+    "maya" : '<iframe id="maya-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1BeBLO59Ji3acFnaFpqbtZ?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+    "philip" : '<iframe id="philip-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2TSOAUJOXI1n7HJulpRsaV?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+    "ashley" : '<iframe id="ashley-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1OVGqSlxvE0d15aaTy8hGy?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+    "lyssa" : '<iframe id="lyssa-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6V4FeoCo1qlBFI9LWyM7dI?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
 }
 
 $(".disk").click(function() {
-    let p = $(this).data('p');
+    p = $(this).data('p');
     // color palette change
     $('body').attr("class", p);
 
@@ -28,6 +30,24 @@ $(".disk").click(function() {
     $(".disk-currently-playing").toggleClass("disk-currently-playing");
     $(this).toggleClass("disk-currently-playing");
 
-    // embed the playlist
-    $(".current-playlist").html(spotifyPlaylists[p] + "<p>currently playing: " + p + "'s playlist</p>");
+    // embed the playlist, add volume slider, add <p> text
+    $(".current-playlist").html(spotifyPlaylists[p] + '<input type="range" id="volumeSlider" min="0" max="1" step="0.1" value=".7"></input>' + "<p>currently playing: " + p + "'s playlist</p>");
 });
+
+/*
+// event listener for volume slider
+$(document).on('input', '#volumeSlider', function () {
+    // get current value of slider between 0 and 1
+    const volume = $(this).val(); 
+
+    // get iframe-specific id
+    const iframeId = p + '-iframe';
+
+    // debug
+    console.log(iframeId);
+
+    // change volume of specific iframe (DOESNT WORK!!!!!!!!!!!!!!!!!!!!!!!!!!)
+    const iframe = document.getElementById(iframeId);
+    iframe.contentWindow.postMessage({ method: 'setVolume', value: volume }, '*');
+});
+*/
