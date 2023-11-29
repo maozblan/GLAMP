@@ -30,24 +30,6 @@ $(".disk").click(function() {
     $(".disk-currently-playing").toggleClass("disk-currently-playing");
     $(this).toggleClass("disk-currently-playing");
 
-    // embed the playlist, add volume slider, add <p> text
-    $(".current-playlist").html(spotifyPlaylists[p] + '<input type="range" id="volumeSlider" min="0" max="1" step="0.1" value=".7"></input>' + "<p>currently playing: " + p + "'s playlist</p>");
+    // embed the playlist and add <p> text
+    $(".current-playlist").html(spotifyPlaylists[p] + "<p>currently playing: " + p + "'s playlist</p>");
 });
-
-/*
-// event listener for volume slider
-$(document).on('input', '#volumeSlider', function () {
-    // get current value of slider between 0 and 1
-    const volume = $(this).val(); 
-
-    // get iframe-specific id
-    const iframeId = p + '-iframe';
-
-    // debug
-    console.log(iframeId);
-
-    // change volume of specific iframe (DOESNT WORK!!!!!!!!!!!!!!!!!!!!!!!!!!)
-    const iframe = document.getElementById(iframeId);
-    iframe.contentWindow.postMessage({ method: 'setVolume', value: volume }, '*');
-});
-*/
