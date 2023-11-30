@@ -4,7 +4,7 @@
 
 // just making the title page disappear when clicked
 $("#title-page").click(function() {
-    $("#title-page").fadeOut(300);
+    $("#title-page").fadeOut(3000);
 });
 
 // 

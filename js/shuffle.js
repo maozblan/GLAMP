@@ -34,7 +34,13 @@ jsonData = {
     },
     "5" : {
         "text" : "i fell in love with you while reading your favorite book. i think of you every time i see a magnificent tree, a tiny ceramic house, or a seahorse. you set a precedent i will never forget and you only loved me up close for 3 months."
-    }
+    },
+    "6" : {
+        "text" : "I got a crush on my friend in HS who was already in a relationship of 2 years. In our senior year, I slipped an anonymous love letter in his locker wishing him and his GF the best of luck in the future. He thought the letter was a prank."
+    },
+    "7" : {
+        "text" : "i once had a crush on one of my best friends in high school and im so glad i never told them. they turned out to be so controlling and passive agressive and im glad we dont talk anymore"
+    },
 };
 
 // corkboard shuffle implementaion
