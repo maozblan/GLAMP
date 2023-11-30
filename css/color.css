@@ -61,6 +61,11 @@ body {
     transition-duration: 1s;
 }
 
+#title-page {
+    background-color: var(--main);
+    color: var(--text);
+}
+
 #sidebar {
     background-color: var(--sub);
 }
