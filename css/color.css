@@ -77,6 +77,6 @@ body {
     color: var(--post-it);
 }
 
-#sidebar,#playlist-wrapper,#corkboard {
+#sidebar,#playlist-wrapper {
     border: 1.5px solid var(--text);
 }

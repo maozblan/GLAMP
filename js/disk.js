@@ -18,12 +18,12 @@ $(".disk").click(function() {
     $('body').attr("class", p);
 
     // loading page, courtsey of chatGPT
-    $("#playlist-loading").fadeIn(150, function() {
+    $("#playlist-loading").fadeIn(250, function() {
         // using callback to make sure fadeIn completes
         console.log("fadein");
         setTimeout(() => {
-            $("#playlist-loading").fadeOut(150, function() {console.log("fadeout")});
-        }, 500);
+            $("#playlist-loading").fadeOut(250, function() {console.log("fadeout")});
+        }, 550);
     });
 
     // move the disk
