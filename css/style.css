@@ -323,3 +323,130 @@ h1, h2, h3 {
     max-width: 400px;
     max-height: 650px;
 }
+
+/* Maya's Collage Below */
+
+#blue-angel {
+    position: absolute;
+    top: 40px;
+    right: 540px;
+    width: 100%;
+    max-width: 250px;
+    max-height: 500px;
+ }
+ 
+ #round-roses {
+    position: absolute;
+    top: 15px;
+    right: 750px;
+    width: 100%;
+    max-width: 250px;
+    max-height: 500px;
+    rotate: -110deg;
+ }
+
+ #yellow-butterfly {
+    position: absolute;
+    top: 200px;
+    right: 800px;
+    width: 100%;
+    max-width: 150px;
+    max-height: 500px;
+    rotate: -30deg;
+ }
+
+ #dove-rose {
+    position: absolute;
+    top: 300px;
+    right: 750px;
+    width: 100%;
+    max-width: 230px;
+    max-height: 500px;
+ }
+
+ #heart {
+    position: absolute;
+    top: 450px;
+    right: 720px;
+    width: 100%;
+    max-width: 240px;
+    max-height: 500px;
+ }
+
+ #pink-angel {
+    position: absolute;
+    top: 570px;
+    right: 520px;
+    width: 100%;
+    max-width: 240px;
+    max-height: 500px;
+ }
+
+ #fan {
+    position: absolute;
+    top: 490px;
+    right: 270px;
+    width: 100%;
+    max-width: 240px;
+    max-height: 500px;
+    rotate: -55deg;
+ }
+
+ #rose {
+    position: absolute;
+    top: 470px;
+    right: 30px;
+    width: 100%;
+    max-width: 240px;
+    max-height: 500px;
+    rotate: 80deg;
+ }
+
+ #blue-butterfly {
+    position: absolute;
+    top: 60px;
+    right: 400px;
+    width: 100%;
+    max-width: 180px;
+    max-height: 500px;
+    rotate: 15deg;
+ }
+
+ #purple-flower {
+    position: absolute;
+    top: 25px;
+    right: 230px;
+    width: 100%;
+    max-width: 230px;
+    max-height: 500px;
+    rotate: 40deg;
+ }
+
+ #sweetheart {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 100%;
+    max-width: 250px;
+    max-height: 500px;
+    rotate: 20deg;
+ }
+
+ #dove {
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    width: 100%;
+    max-width: 240px;
+    max-height: 500px;
+ }
+
+ #lily {
+    position: absolute;
+    top: 320px;
+    right: 18px;
+    width: 100%;
+    max-width: 200px;
+    max-height: 500px;
+    rotate: -80deg;
+ }
