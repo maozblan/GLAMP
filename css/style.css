@@ -5,7 +5,7 @@
 }
 
 div {
-    border: 1px solid var(--accent);
+    /* border: 1px solid var(--accent); */
     padding: 10px;
     box-sizing: border-box;
 }
@@ -270,8 +270,11 @@ h1, h2, h3 {
 
 /* others */
 
-#bus-pass {
+.corkboard-des img {
     position: absolute;
+}
+
+#bus-pass {
     top: 15px;
     right: 20px;
     width: 100%;
@@ -280,7 +283,6 @@ h1, h2, h3 {
 }
 
 #participation-ribbon {
-    position:absolute;
     top: 10px;
     left: 5px;
     width: 100%;
@@ -289,7 +291,6 @@ h1, h2, h3 {
  }
 
 #concert-polaroid {
-    position: absolute;
     bottom: 50px;
     left: 150px;
     width: 100%;
@@ -298,7 +299,6 @@ h1, h2, h3 {
 }
 
 #queer-prom {
-    position: absolute;
     top: 50px;
     right: 150px;
     width: 100%;
@@ -307,7 +307,6 @@ h1, h2, h3 {
 }
 
 #kewpie-moth {
-    position: absolute;
     bottom: 40px;
     right: 40px;
     width: 100%;
@@ -316,7 +315,6 @@ h1, h2, h3 {
 }
 
 #lacma-ticket {
-    position: absolute;
     bottom: 50px;
     right: 75px;
     width: 100%;
@@ -327,18 +325,16 @@ h1, h2, h3 {
 /* Maya's Collage Below */
 
 #blue-angel {
-    position: absolute;
     top: 40px;
-    right: 540px;
+    left: 225px;
     width: 100%;
     max-width: 250px;
     max-height: 500px;
  }
  
  #round-roses {
-    position: absolute;
     top: 15px;
-    right: 750px;
+    left: 15px;
     width: 100%;
     max-width: 250px;
     max-height: 500px;
@@ -346,9 +342,8 @@ h1, h2, h3 {
  }
 
  #yellow-butterfly {
-    position: absolute;
     top: 200px;
-    right: 800px;
+    left: 55px;
     width: 100%;
     max-width: 150px;
     max-height: 500px;
@@ -356,36 +351,32 @@ h1, h2, h3 {
  }
 
  #dove-rose {
-    position: absolute;
-    top: 300px;
-    right: 750px;
+    bottom: 280px;
+    left: 30px;
     width: 100%;
     max-width: 230px;
     max-height: 500px;
  }
 
  #heart {
-    position: absolute;
-    top: 450px;
-    right: 720px;
+    bottom: 40px;
+    left: 45px;
     width: 100%;
     max-width: 240px;
     max-height: 500px;
  }
 
  #pink-angel {
-    position: absolute;
-    top: 570px;
-    right: 520px;
+    bottom: 30px;
+    left: 255px;
     width: 100%;
     max-width: 240px;
     max-height: 500px;
  }
 
  #fan {
-    position: absolute;
-    top: 490px;
-    right: 270px;
+    bottom: 15px;
+    left: 490px;
     width: 100%;
     max-width: 240px;
     max-height: 500px;
@@ -393,8 +384,7 @@ h1, h2, h3 {
  }
 
  #rose {
-    position: absolute;
-    top: 470px;
+    bottom: 65px;
     right: 30px;
     width: 100%;
     max-width: 240px;
@@ -403,7 +393,6 @@ h1, h2, h3 {
  }
 
  #blue-butterfly {
-    position: absolute;
     top: 60px;
     right: 400px;
     width: 100%;
@@ -413,7 +402,6 @@ h1, h2, h3 {
  }
 
  #purple-flower {
-    position: absolute;
     top: 25px;
     right: 230px;
     width: 100%;
@@ -423,7 +411,6 @@ h1, h2, h3 {
  }
 
  #sweetheart {
-    position: absolute;
     top: 30px;
     right: 40px;
     width: 100%;
@@ -433,8 +420,7 @@ h1, h2, h3 {
  }
 
  #dove {
-    position: absolute;
-    top: 250px;
+    bottom: 380px;
     right: 50px;
     width: 100%;
     max-width: 240px;
@@ -442,8 +428,7 @@ h1, h2, h3 {
  }
 
  #lily {
-    position: absolute;
-    top: 320px;
+    bottom: 260px;
     right: 18px;
     width: 100%;
     max-width: 200px;

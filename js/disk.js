@@ -16,6 +16,12 @@ $(".disk").click(function() {
     p = $(this).data('p');
     // color palette change
     $('body').attr("class", p);
+    // corkboard design change
+    if (!($('.current-corkboard-des').hasClass(`${p}-corkboard`))) {
+        $('.current-corkboard-des').fadeOut(250).toggleClass('current-corkboard-des');
+        $(`.${p}-corkboard`).fadeIn(250).toggleClass('current-corkboard-des');
+        console.log($(`.${p}-corkboard`));
+    }
 
     // loading page, courtsey of chatGPT
     $("#playlist-loading").fadeIn(150, function() {

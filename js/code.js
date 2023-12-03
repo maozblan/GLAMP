@@ -7,6 +7,12 @@ $("#title-page").click(function() {
     $("#title-page").fadeOut(3000);
 });
 
+// hiding all the other corkboard pages
+$(document).ready(function() {
+    $('.corkboard-des').hide();
+    $('.current-corkboard-des').show();
+});
+
 // 
 // initializing variables to track if something's being dragged, and offset too
 let currentlyDragging = false;
