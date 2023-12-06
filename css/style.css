@@ -453,3 +453,52 @@ h1, h2, h3 {
     max-height: 500px;
     rotate: -80deg;
  }
+
+ /* philip's corkboard images */
+ #bernie-sans {
+    top: 96px;
+    left: 195px;
+    max-width: 150px;
+    max-height: 150px;
+    rotate: -5deg;
+ }
+
+ #crane {
+    top: 63px;
+    right: 11px;
+    max-width: 300px;
+    max-height: 300px;
+ }
+
+ #garf {
+    bottom: 90px;
+    left: 77px;
+    max-width: 150px;
+    max-height: 150px;
+    rotate: 2deg;
+ }
+
+ #music {
+    max-width: 150px;
+    top: 63px;
+    left: 60px;
+    max-height: 150px;
+    rotate: 3deg;
+ }
+
+ #pen {
+    bottom: 75px;
+    right: 50px;
+    max-width: 150px;
+    max-height: 150px;
+    rotate: -3deg;
+ }
+
+ #thumbtack {
+    max-width: 25px;
+    max-height: 25px;
+    right: 140px;
+    top: 90px;
+    position: absolute;
+    z-index: 1;
+ }
