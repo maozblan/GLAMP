@@ -269,6 +269,23 @@ h1, h2, h3 {
     top: 15%;
 }
 
+/* confession link post-it img */
+/* make it highlight or something when mouse hovers over it */
+.confession {
+    max-width: 200px;
+    min-height: 200px;
+    position: relative;
+}
+
+/* sticker sheet */
+.sticker-sheet {
+    max-width: 160px;
+    height: fit-content;
+    min-height: 200px;
+    position: relative;
+    /* idk how to make it change in size alongside the website screen */
+}
+
 /* others */
 
 .corkboard-des img {

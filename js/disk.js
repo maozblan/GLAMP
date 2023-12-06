@@ -40,3 +40,5 @@ $(".disk").click(function() {
     $(".current-playlist").html(spotifyPlaylists[p]);
     $(".current-playlist-text").html("<p>currently playing: " + p + "'s playlist</p>");
 });
+
+
