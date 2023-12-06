@@ -457,7 +457,7 @@ h1, h2, h3 {
  /* philip's corkboard images */
  #bernie-sans {
     top: 96px;
-    left: 195px;
+    left: 220px;
     max-width: 150px;
     max-height: 150px;
     rotate: -5deg;
@@ -481,14 +481,14 @@ h1, h2, h3 {
  #music {
     max-width: 150px;
     top: 63px;
-    left: 60px;
+    left: 84px;
     max-height: 150px;
     rotate: 3deg;
  }
 
  #pen {
     bottom: 75px;
-    right: 50px;
+    right: 61px;
     max-width: 150px;
     max-height: 150px;
     rotate: -3deg;
