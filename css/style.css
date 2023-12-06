@@ -166,7 +166,7 @@ h1, h2, h3 {
 .disk-currently-playing {
     left: 52%;
     top: 33%;
-    animation: spin 5s linear infinite;
+    animation: spin 10s linear infinite;
 }
 
 .spotify-embed-wrapper {
@@ -250,6 +250,7 @@ h1, h2, h3 {
 }
 
 #shuffle-button {
+    border: none;
     align-self: flex-end;
 }
 
