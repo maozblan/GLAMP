@@ -37,11 +37,11 @@ body.philip {
 }
 
 body.ashley {
-    --main: #686868;
-    --accent: #de76bb;
-    --sub: #70798d;
-    --comp: #6f95e9;
-    --text: #f5f5f5;
+    --main: #23263f;
+    --accent: #6f6982;
+    --sub: #3e3147;
+    --comp: #725a6e;
+    --text: #white;
     --post-it: var(--main);
 }
 
