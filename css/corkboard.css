@@ -299,3 +299,27 @@
     position: absolute;
     rotate: 3deg;
  }
+ 
+ #keychain {
+    width: 180px;
+    bottom: 300px;
+    right: 1050px;
+    position: absolute;
+    rotate: -5deg;
+ }
+ 
+ #ticket {
+    width: 250px;
+    bottom: 80px;
+    right: 550px;
+    position: absolute;
+    rotate: -5deg;
+ }
+ 
+ #lotus {
+    width: 250px;
+    bottom: 241px;
+    right: 64px;
+    position: absolute;
+    rotate: -5deg;
+ }
