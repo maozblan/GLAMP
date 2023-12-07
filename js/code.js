@@ -13,51 +13,63 @@ $(document).ready(function() {
     $('.current-corkboard-des').show();
 });
 
-// 
-// initializing variables to track if something's being dragged, and offset too
-let currentlyDragging = false;
-let offsetX, offsetY;
+// click and drag functionality for sticker
+$(document).ready(function() {
+    // initializing tracking variable and offset
+    let isDragging = false;
+    let offsetX, offsetY;
 
+    // mousedown event for sticker
+    $(".sticker").mousedown(function (idk) {
+        isDragging = true;
+        offsetX = idk.clientX - $(this).offset().left;
+        offsetY = idk.clientY - $(this).offset().top;
+        $(this).css("z-index", "9999");
+    });
 
+    // mouseup event for corkboard
+    $(document).mouseup(function () {
+        if (isDragging) {
+            isDragging = false;
+            $(".sticker").css("z-index", "1");
+        }
+    });
 
+    // mousemove event to drag sticker
+    $(document).mousemove(function (e) {
+        if (isDragging) {
+            $(".sticker.dragging").offset({
+                top: e.clientY - offsetY,
+                left: e.clientX - offsetX
+            });
+        }
+    });
 
+    // mouseup event for sticker
+    $(".sticker").mouseup(function () {
+        if (isDragging) {
+            isDragging = false;
+            $(this).removeClass("dragging");
+        }
+    });
 
+    // mouseup event for corkboard
+    $(document).mouseup(function () {
+        if (isDragging) {
+            isDragging = false;
+            $(".sticker").removeClass("dragging");
+        }
+    });
 
-
-
-// deprecated code (we dont need this functionality)
-// functionality: click and drag imgs
-/*
-// gets bus pass img from html by its id
-const bus_pass = document.getElementById('bus-pass');
-
-// adds event listener on bus_pass when mouse is pressed down
-bus_pass.addEventListener('mousedown', (e) => {
-    // sets dragging state to true
-    currentlyDragging = true;
-
-    // calculates offset of mouse from top left corner of img
-    offsetX = e.clientX - bus_pass.getBoundingClientRect().left;
-    offsetY = e.clientY - bus_pass.getBoundingClientRect().top;
+    // click event for heart sticker
+    $("#sticker1").click(function () {
+        if (!isDragging) {
+            // Create a clone of the heart sticker
+            let clone = $("<div class='sticker'></div>").css({
+                "background-image": "url('img/stickersheet/love.png')",
+                "background-size": "cover"
+            });
+            clone.appendTo("#sticker-sheet");
+        }
+    });
 });
-
-// adds event listener for dragging movement when mouse is moved
-document.addEventListener('mousemove', (e) => {
-    // check to see if img is currently being dragged
-    if(currentlyDragging) {
-        // calculates new img position based on mouse position
-        const x = e.clientX - offsetX;
-        const y = e.clientY - offsetY;
-
-        // changed img position to calcualted img position from above
-        bus_pass.style.left = `${x}px`;
-        bus_pass.style.top = `${y}px`;
-    }
-});
-
-// adds event listener to stop moving/dragging img when mouse is released
-document.addEventListener('mouseup', () => {
-    // sets dragging state to false when mouse is released
-    currentlyDragging = false;
-})
-*/

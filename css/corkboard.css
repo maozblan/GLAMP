@@ -206,11 +206,47 @@
     rotate: -3deg;
 }
 
-#thumbtack {
+#thumbtack1 {
     max-width: 25px;
     max-height: 25px;
     right: 140px;
     top: 90px;
+    position: absolute;
+    z-index: 1;
+}
+
+#thumbtack2 {
+    max-width: 25px;
+    max-height: 25px;
+    right: 250px;
+    bottom: 88px;
+    position: absolute;
+    z-index: 1;
+}
+
+#thumbtack3 {
+    max-width: 25px;
+    max-height: 25px;
+    right: 304px;
+    bottom: 94px;
+    position: absolute;
+    z-index: 1;
+}
+
+#thumbtack4 {
+    max-width: 25px;
+    max-height: 25px;
+    right: 354px;
+    bottom: 80px;
+    position: absolute;
+    z-index: 1;
+}
+
+#thumbtack5 {
+    max-width: 25px;
+    max-height: 25px;
+    right: 347px;
+    bottom: 127px;
     position: absolute;
     z-index: 1;
 }
