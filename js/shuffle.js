@@ -4,6 +4,15 @@
 
 let jsonData;
 let validKeys;
+
+const postItNum = [...Array(3).keys()].map(i => i + 1);  // courtsey of google bard
+function permutate() {
+    for (let i = 0; i < postItNum.length; ++i) {
+        let j = Math.floor(Math.random() * (postItNum.length - i) + i);
+        [postItNum[i], postItNum[j]] = [postItNum[j], postItNum[i]];
+    }
+}
+
 async function getResponses() {
     let response = await fetch('./js/responses.json');
     jsonData = await response.json();
@@ -21,7 +30,7 @@ async function getResponses() {
         $('#corkboard .post-it').remove();
         // randomize text selection from json
         let pick = Math.floor(Math.random() * validKeys.length);
-        let text = jsonData[validKeys[pick]].text;
+        let text = jsonData[validKeys[pick]].text;  // is a list
         // remove key from valid keys
         validKeys.splice(pick, 1);
         // replenish valid keys
@@ -29,12 +38,16 @@ async function getResponses() {
             validKeys = Object.keys(jsonData);
         }
         console.log(text);
+        // shuffle post-it backgrounds
+        permutate();
         // create div with with fetched text and append to corkboard
-        let div = $("<div>", {
-            class: "post-it",
-            text: text
-        });
-        $("#corkboard").append(div);
+        for (let i = 0; i < text.length; ++i) {
+            let div = $("<div>", {
+                class: `post-it post-it-loc${i+1} post-it-img${postItNum[i]}`,
+                text: text[i],
+            });
+            $("#corkboard").append(div);
+        }
     });
 }
 getResponses();     // call async function

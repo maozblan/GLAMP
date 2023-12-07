@@ -14,7 +14,7 @@ $(document).ready(function() {
 });
 
 // click and drag functionality for sticker
-$(document).ready(function() {
+/*$(document).ready(function() {
     // initializing tracking variable and offset
     let isDragging = false;
     let offsetX, offsetY;
@@ -24,14 +24,14 @@ $(document).ready(function() {
         isDragging = true;
         offsetX = idk.clientX - $(this).offset().left;
         offsetY = idk.clientY - $(this).offset().top;
-        $(this).css("z-index", "9999");
+        $(this).css("z-index", "400");
     });
 
     // mouseup event for corkboard
     $(document).mouseup(function () {
         if (isDragging) {
             isDragging = false;
-            $(".sticker").css("z-index", "1");
+            $(".sticker").css("z-index", "401");
         }
     });
 
@@ -72,4 +72,4 @@ $(document).ready(function() {
             clone.appendTo("#sticker-sheet");
         }
     });
-});
+});*/
