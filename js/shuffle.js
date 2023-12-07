@@ -14,6 +14,9 @@ async function getResponses() {
     // make corkboard clickable ONLY if json responses are fetched
     // corkboard shuffle implementaion
     $("#shuffle-button").click(function() {
+        // if the starting speech bubble is still there, remove it
+        console.log($('#shuffle-button-pop-up'));
+        $('#shuffle-button-pop-up').hide();
         // clear out the old post-it data
         $('#corkboard .post-it').remove();
         // randomize text selection from json

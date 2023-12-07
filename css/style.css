@@ -5,7 +5,7 @@
 }
 
 div {
-    /* border: 1px solid var(--accent); */
+    border: 1px solid var(--accent);
     padding: 10px;
     box-sizing: border-box;
 }
@@ -254,16 +254,28 @@ h1, h2, h3 {
     position: relative;   /* so the pieces don't run away */
 }
 
+/* shuffle button */
+#shuffle-button-wrapper {
+    z-index: 250;
+    margin-left: 0.5vw;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+}
+
+#shuffle-button-pop-up {
+    background-image: url('../img/speech-bubble.png');
+    color: black;
+    margin-bottom: 10px;
+}
+
 #shuffle-button {
     border: none;
     border-radius: 6px;
     text-align: center;
     height: 30px;
     width: 150px;
-    align-self: flex-end;
-    margin-left: 0.5vw;
-    margin-right: auto;
-    z-index: 250;
     cursor: pointer;
 }
 
