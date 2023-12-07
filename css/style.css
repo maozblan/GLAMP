@@ -5,7 +5,7 @@
 }
 
 div {
-    border: 1px solid var(--accent);
+    /* border: 1px solid var(--accent); */
     padding: 10px;
     box-sizing: border-box;
 }
@@ -304,7 +304,7 @@ h1, h2, h3 {
 
 .post-it-loc2 {
     left: 22%;
-    top: 43%;
+    top: 45%;
     z-index: 12;
 }
 
@@ -324,13 +324,6 @@ h1, h2, h3 {
 
 .post-it-img3 {
     background-image: url('../img/post-it-3.png');
-}
-
-.post-it2 {
-    left: 0;
-    top: 0;
-    right: 25%;
-    bottom: 22%;
 }
 
 #bottom-sidebar-wrapper {

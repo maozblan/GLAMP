@@ -323,3 +323,145 @@
     position: absolute;
     rotate: -5deg;
  }
+
+/* lyssa corkboard design */
+
+.lyssa-corkboard img {
+    position: absolute;
+}
+
+#tea {
+    width: 230px;
+    right: 85px;
+    bottom: 25px;
+    filter: brightness(125%);
+    rotate: 5deg;
+}
+
+#pop-socket {
+    width: 150px;
+    right: 25px;
+    bottom: 170px;
+    filter: brightness(90%);
+    rotate: -2deg;
+}
+
+#check1 {
+    width: 270px;
+    right: 35px;
+    top: 25px;
+    rotate: -2deg;
+}
+
+#check2 {
+    width: 250px;
+    right: 220px;
+    top: 110px;
+    filter: brightness(90%);
+    rotate: 6deg;
+}
+
+#bandaid1 {
+    height: 80px;
+    left: -20px;
+    bottom: 130px;
+    rotate: -98deg;
+}
+
+#bandaid2 {
+    height: 80px;
+    left: 50px;
+    bottom: 180px;
+    rotate: -84deg;
+}
+
+#bandaid4 {
+    height: 80px;
+    top: 240px;
+    left: 45px;
+    rotate: -81deg;
+}
+
+#bandaid6 {
+    width: 80px;
+    top: 50px;
+    left: 40px;
+    rotate: -12deg;
+}
+
+#star1 {
+    width: 50px;
+    top: 56px;
+    left: 90px;
+    rotate: 160deg;
+}
+
+#star1 {
+    width: 50px;
+    top: 56px;
+    left: 90px;
+    rotate: 160deg;
+}
+
+#star1 {
+    width: 50px;
+    top: 56px;
+    left: 90px;
+    rotate: 160deg;
+}
+
+#star2 {
+    width: 70px;
+    top: 90px;
+    left: 140px;
+    filter: brightness(105%);
+    rotate: 25deg;
+}
+
+#star3 {
+    width: 50px;
+    bottom: 320px;
+    left: 90px;
+    filter: brightness(110%);
+    rotate: 160deg;
+}
+
+#star4 {
+    width: 70px;
+    bottom: 80px;
+    left: 210px;
+    filter: brightness(115%);
+    rotate: 180deg;
+}
+
+#star5 {
+    width: 50px;
+    bottom: 130px;
+    left: 290px;
+    filter: brightness(105%);
+    rotate: 85deg;
+}
+
+#star6 {
+    width: 50px;
+    bottom: 65px;
+    left: 450px;
+    filter: brightness(115%);
+    rotate: -20deg;
+}
+
+#star7 {
+    width: 50px;
+    top: 60px;
+    right: 490px;
+    filter: brightness(105%);
+    rotate: 185deg;
+}
+
+#star8 {
+    width: 70px;
+    bottom: 180px;
+    right: 350px;
+    filter: brightness(115%);
+    rotate: 20deg;
+}
