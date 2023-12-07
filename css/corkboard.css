@@ -250,3 +250,52 @@
     position: absolute;
     z-index: 1;
 }
+
+/* ashley's corkboard images */
+ #heart-note {
+    width: 200px;
+    bottom: 645px;
+    right: 1030px;
+    position: absolute;
+    rotate: 65deg;
+ }
+
+ #movie-tickets {
+    width: 350px;
+    bottom: 90px;
+    right: 900px;
+    position: absolute;
+    rotate: 5deg;
+ }
+
+ #fortune {
+    width: 250px;
+    bottom: 725px;
+    right: 550px;
+    position: absolute;
+    rotate: -5deg;
+ }
+
+ #zoo-ticket1 {
+    width: 350px;
+    bottom: 78px;
+    right: 75px;
+    position: absolute;
+    rotate: -3deg;
+ }
+
+ #zoo-ticket2 {
+    width: 350px;
+    bottom: 90px;
+    right: 75px;
+    position: absolute;
+    rotate: 3deg;
+ }
+
+ #polaroid {
+    width: 250px;
+    bottom: 500px;
+    right: 75px;
+    position: absolute;
+    rotate: 3deg;
+ }
