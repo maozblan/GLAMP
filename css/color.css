@@ -15,7 +15,7 @@ body.grace {
     --sub: #C0F6A6;
     --comp: #65EC7D;
     --text: #BD2071;
-    --post-it: var(--text);
+    --post-it: #6c1240;
 }
 
 body.maya {

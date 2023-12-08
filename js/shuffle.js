@@ -25,8 +25,9 @@ async function getResponses() {
     $("#shuffle-button").click(function() {
         // if the starting speech bubble is still there, remove it
         console.log($('#shuffle-button-pop-up'));
-        $('#shuffle-button-pop-up').hide();
+        $('#shuffle-button-pop-up').fadeOut(150);
         // clear out the old post-it data
+        $('#corkboard .post-it').fadeOut();
         $('#corkboard .post-it').remove();
         // randomize text selection from json
         let pick = Math.floor(Math.random() * validKeys.length);
@@ -43,10 +44,13 @@ async function getResponses() {
         // create div with with fetched text and append to corkboard
         for (let i = 0; i < text.length; ++i) {
             let div = $("<div>", {
-                class: `post-it post-it-loc${i+1} post-it-img${postItNum[i]}`,
+                class: `post-it post-it-loc${i+1} post-it-img${postItNum[i]} hidden`,
                 text: text[i],
             });
             $("#corkboard").append(div);
+            setTimeout(() => {
+                $(div).fadeIn(150);
+            }, (150));
         }
     });
 }
