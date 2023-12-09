@@ -254,8 +254,10 @@
 /* ashley's corkboard images */
  #heart-note {
     width: 200px;
-    bottom: 645px;
-    right: 1030px;
+    /* bottom: 645px;
+    right: 1030px; */
+    top: -5px;
+    left: -215px;
     position: absolute;
     rotate: 65deg;
  }
@@ -263,15 +265,18 @@
  #movie-tickets {
     width: 350px;
     bottom: 90px;
-    right: 900px;
+    /* right: 900px; */
+    left: -240px;
     position: absolute;
     rotate: 5deg;
  }
 
  #fortune {
     width: 250px;
-    bottom: 725px;
-    right: 550px;
+    /* bottom: 725px; */
+    top: 45px;
+    /* right: 550px; */
+    left: 175px;
     position: absolute;
     rotate: -5deg;
  }
@@ -294,7 +299,8 @@
 
  #polaroid {
     width: 250px;
-    bottom: 500px;
+    /* bottom: 500px; */
+    top: 40px;
     right: 75px;
     position: absolute;
     rotate: 3deg;
@@ -302,8 +308,10 @@
  
  #keychain {
     width: 180px;
-    bottom: 300px;
-    right: 1050px;
+    /* bottom: 300px;
+    right: 1050px; */
+    top: 270px;
+    left: -220px;
     position: absolute;
     rotate: -5deg;
  }
@@ -311,7 +319,8 @@
  #ticket {
     width: 250px;
     bottom: 80px;
-    right: 550px;
+    /* right: 550px; */
+    left: 170px;
     position: absolute;
     rotate: -5deg;
  }
