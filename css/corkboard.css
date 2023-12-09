@@ -276,7 +276,7 @@
     width: 350px;
     /* bottom: 90px;
     right: 900px; */
-    top: 640px;
+    bottom: 100px;
     left: 70px;
     position: absolute;
     rotate: 5deg;
@@ -296,7 +296,7 @@
     width: 250px;
     /* bottom: 80px;
     right: 550px; */
-    top: 720px;
+    bottom: 90px;
     left: 540px;
     position: absolute;
     rotate: -5deg;
@@ -304,40 +304,40 @@
 
  #polaroid {
     width: 250px;
-    /* bottom: 500px;
-    right: 75px; */
+    /* bottom: 500px; */
+    right: 75px;
     top: 80px;
-    left: 975px;
+    /* left: 975px; */
     position: absolute;
     rotate: 3deg;
  }
  
  #lotus {
     width: 250px;
-    /* bottom: 241px;
-    right: 64px; */
+    /* bottom: 241px; */
+    right: 64px;
     top: 440px;
-    left: 1000px;
+    /* left: 1000px; */
     position: absolute;
     rotate: -5deg;
  }
 
  #zoo-ticket2 {
     width: 350px;
-    /* bottom: 90px;
-    right: 75px; */
-    top: 705px;
-    left: 890px;
+    bottom: 90px;
+    right: 75px;
+    /* bottom: 95px;
+    right: 890px; */
     position: absolute;
     rotate: 3deg;
  }
 
  #zoo-ticket1 {
     width: 350px;
-    /* bottom: 78px;
-    right: 75px; */
-    top: 720px;
-    left: 890px;
+    bottom: 78px;
+    right: 75px;
+    /* top: 720px;
+    left: 890px; */
     position: absolute;
     rotate: -3deg;
  }
