@@ -256,81 +256,90 @@
     width: 200px;
     /* bottom: 645px;
     right: 1030px; */
-    top: -5px;
-    left: -215px;
+    top: 55px;
+    left: 100px;
     position: absolute;
     rotate: 65deg;
- }
-
- #movie-tickets {
-    width: 350px;
-    bottom: 90px;
-    /* right: 900px; */
-    left: -240px;
-    position: absolute;
-    rotate: 5deg;
- }
-
- #fortune {
-    width: 250px;
-    /* bottom: 725px; */
-    top: 45px;
-    /* right: 550px; */
-    left: 175px;
-    position: absolute;
-    rotate: -5deg;
- }
-
- #zoo-ticket1 {
-    width: 350px;
-    bottom: 78px;
-    right: 75px;
-    position: absolute;
-    rotate: -3deg;
- }
-
- #zoo-ticket2 {
-    width: 350px;
-    bottom: 90px;
-    right: 75px;
-    position: absolute;
-    rotate: 3deg;
- }
-
- #polaroid {
-    width: 250px;
-    /* bottom: 500px; */
-    top: 40px;
-    right: 75px;
-    position: absolute;
-    rotate: 3deg;
  }
  
  #keychain {
     width: 180px;
     /* bottom: 300px;
     right: 1050px; */
-    top: 270px;
-    left: -220px;
+    top: 310px;
+    left: 115px;
+    position: absolute;
+    rotate: -5deg;
+ }
+
+ #movie-tickets {
+    width: 350px;
+    /* bottom: 90px;
+    right: 900px; */
+    top: 640px;
+    left: 70px;
+    position: absolute;
+    rotate: 5deg;
+ }
+
+ #fortune {
+    width: 250px;
+    /* bottom: 725px;
+    right: 550px; */
+    top: 90px;
+    left: 550px;
     position: absolute;
     rotate: -5deg;
  }
  
  #ticket {
     width: 250px;
-    bottom: 80px;
-    /* right: 550px; */
-    left: 170px;
+    /* bottom: 80px;
+    right: 550px; */
+    top: 720px;
+    left: 540px;
     position: absolute;
     rotate: -5deg;
+ }
+
+ #polaroid {
+    width: 250px;
+    /* bottom: 500px;
+    right: 75px; */
+    top: 80px;
+    left: 975px;
+    position: absolute;
+    rotate: 3deg;
  }
  
  #lotus {
     width: 250px;
-    bottom: 241px;
-    right: 64px;
+    /* bottom: 241px;
+    right: 64px; */
+    top: 440px;
+    left: 1000px;
     position: absolute;
     rotate: -5deg;
+ }
+
+ #zoo-ticket2 {
+    width: 350px;
+    /* bottom: 90px;
+    right: 75px; */
+    top: 705px;
+    left: 890px;
+    position: absolute;
+    rotate: 3deg;
+ }
+
+ #zoo-ticket1 {
+    width: 350px;
+    /* bottom: 78px;
+    right: 75px; */
+    top: 720px;
+    left: 890px;
+    position: absolute;
+    rotate: -3deg;
  }
 
 /* lyssa corkboard design */
