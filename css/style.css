@@ -342,18 +342,53 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
+.confession:hover {
+    filter: brightness(110%);
+}
+
 /* sticker sheet */
-.sticker-sheet {
-    height: 22vh;
+#sticker-sheet {
     position: relative;
-    /* idk how to make it change in size alongside the website screen */
+    display: flex;
+}
+
+.sticker-sheet-img {
+    height: 22vh;
+}
+
+#sticker-reactions-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 15;
+    /* to size the sticker-reactions box */
+    padding: 40% 15% 17% 15%;
+}
+
+#sticker-reactions {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(123, 65, 23, 0.5); */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .sticker {
-    width: 50px;
-    height: 50px;
-    bottom: 50px;
-    position: absolute;
+    width: 40%;
+    height: fit-content;
+    padding: 0;
+    margin: 1%;
     cursor: pointer;
     z-index: 401;
+}
+
+.sticker img {
+    height: 100%;
+    width: 100%;
 }
