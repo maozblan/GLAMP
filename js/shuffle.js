@@ -2,6 +2,9 @@
 //Grace Galan, Maya Crolene, Philip Choe, Ashley Huynh, and Lyssa Li 
 //Art101 Fall Quarter 2023 with professor Wes Modes
 
+// import function from firebase
+import { getResponseData } from "./firebase.js";
+
 let jsonData;
 let validKeys;
 
@@ -14,8 +17,7 @@ function permutate() {
 }
 
 async function getResponses() {
-    let response = await fetch('./js/responses.json');
-    jsonData = await response.json();
+    jsonData = getResponseData();
     
     // pick out keys that have not been read
     validKeys = Object.keys(jsonData);
