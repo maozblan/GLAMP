@@ -385,7 +385,7 @@ h1, h2, h3 {
     padding: 0;
     margin: 1%;
     cursor: pointer;
-    z-index: 401;
+    z-index: 16;
 }
 
 .sticker img {

@@ -13,63 +13,40 @@ $(document).ready(function() {
     $('.current-corkboard-des').show();
 });
 
-// click and drag functionality for sticker
-/*$(document).ready(function() {
+// click and drag functionality for stickers
+$(document).ready(function() {
     // initializing tracking variable and offset
     let isDragging = false;
     let offsetX, offsetY;
 
-    // mousedown event for sticker
-    $(".sticker").mousedown(function (idk) {
+    $("#sticker-love, #sticker-happy, #sticker-sad, #sticker-angry").mousedown(function (e) {
         isDragging = true;
-        offsetX = idk.clientX - $(this).offset().left;
-        offsetY = idk.clientY - $(this).offset().top;
-        $(this).css("z-index", "400");
-    });
+        offsetX = e.clientX - $(this).offset().left;
+        offsetY = e.clientY - $(this).offset().top;
 
-    // mouseup event for corkboard
-    $(document).mouseup(function () {
-        if (isDragging) {
-            isDragging = false;
-            $(".sticker").css("z-index", "401");
-        }
-    });
+        let imageSource = $(this).find("img").attr("src");
+        console.log("imageSource = " + imageSource);    // debug (it says that imageSource = undefined, why)
 
-    // mousemove event to drag sticker
-    $(document).mousemove(function (e) {
-        if (isDragging) {
-            $(".sticker.dragging").offset({
-                top: e.clientY - offsetY,
-                left: e.clientX - offsetX
-            });
-        }
-    });
+        // make clone of clicked sticker's img
+        let clone = $("<div class='sticker'></div>").css({
+            "background-image": "url('" + imageSource + "')",
+            "background-size": "cover"
+        });
+        clone.appendTo("#corkboard");   // appends to corkboard (change later when i get back)
+                                        // also, doesnt even show up, WHY???
 
-    // mouseup event for sticker
-    $(".sticker").mouseup(function () {
-        if (isDragging) {
-            isDragging = false;
-            $(this).removeClass("dragging");
-        }
-    });
+        // set initial cloned sticker position
+        clone.offset({
+            top: e.clientY - offsetY,
+            left: e.clientX - offsetX
+        });
 
-    // mouseup event for corkboard
-    $(document).mouseup(function () {
-        if (isDragging) {
-            isDragging = false;
-            $(".sticker").removeClass("dragging");
-        }
-    });
-
-    // click event for heart sticker
-    $("#sticker1").click(function () {
-        if (!isDragging) {
-            // Create a clone of the heart sticker
-            let clone = $("<div class='sticker'></div>").css({
-                "background-image": "url('img/stickersheet/love.png')",
-                "background-size": "cover"
-            });
-            clone.appendTo("#sticker-sheet");
-        }
-    });
-});*/
+        // mouseup event for cloned sticker to prevent further cloning
+        clone.mouseup(function () {
+            if (isDragging) {
+                isDragging = false;
+                clone.removeClass("dragging");  // remove dragging class
+            }
+        });
+    }); 
+});
