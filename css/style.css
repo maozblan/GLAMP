@@ -388,7 +388,29 @@ h1, h2, h3 {
     z-index: 16;
 }
 
+.sticker.dragging {
+    opacity: 0.7; 
+    border: 2px solid #ff0000; /* add red border while dragging */
+}
+
+
 .sticker img {
     height: 100%;
     width: 100%;
+}
+
+#sticker-love {
+    background-image: url("../img/stickersheet/love.png");
+}
+
+#sticker-happy {
+    background-image: url("../img/stickersheet/happy.png");
+}
+
+#sticker-sad {
+    background-image: url("../img/stickersheet/sad.png");
+}
+
+#sticker-angry {
+    background-image: url("../img/stickersheet/.png");
 }

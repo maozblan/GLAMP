@@ -24,16 +24,20 @@ $(document).ready(function() {
         offsetX = e.clientX - $(this).offset().left;
         offsetY = e.clientY - $(this).offset().top;
 
-        let imageSource = $(this).find("img").attr("src");
-        console.log("imageSource = " + imageSource);    // debug (it says that imageSource = undefined, why)
+        // clone clicked sticker
+        let backgroundImage = $(this).css("background-image");
+        let imageSource = backgroundImage.replace(/^url\(['"](.+)['"]\)/, '$1');
 
-        // make clone of clicked sticker's img
+        if (typeof imageSource === "undefined" || imageSource === "none") {
+            console.error("Image source is undefined or not found.");
+            return;
+        }
+
         let clone = $("<div class='sticker'></div>").css({
-            "background-image": "url('" + imageSource + "')",
+            "background-image": "url(" + imageSource + ")",
             "background-size": "cover"
         });
-        clone.appendTo("#corkboard");   // appends to corkboard (change later when i get back)
-                                        // also, doesnt even show up, WHY???
+        clone.appendTo("#sticker-sheet");
 
         // set initial cloned sticker position
         clone.offset({
