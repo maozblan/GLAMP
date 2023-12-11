@@ -3,6 +3,13 @@
 //Art101 Fall Quarter 2023 with professor Wes Modes
 
 let p;
+let spotifyPlaylists = {
+    "grace" : '2Bex8YgZ74EobhnM1poSVp',
+    "maya" : '1BeBLO59Ji3acFnaFpqbtZ',
+    "philip" : '2TSOAUJOXI1n7HJulpRsaV',
+    "ashley" : '1OVGqSlxvE0d15aaTy8hGy',
+    "lyssa" : '6V4FeoCo1qlBFI9LWyM7dI'
+}
 
 $(".disk").click(function() {
     p = $(this).data('p');
@@ -28,14 +35,7 @@ $(".disk").click(function() {
     $(".disk-currently-playing").toggleClass("disk-currently-playing");
     $(this).toggleClass("disk-currently-playing");
 
-    // remove the starter text (only happens once)
-    $("#current-playlist-starter-text").hide();
-
     // embed the playlist and add <p> text
+    $(".current-playlist").html(`<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/${spotifyPlaylists[p]}?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`);
     $(".current-playlist-text").html("<p>currently playing: " + p + "'s playlist</p>");
-    // to hide it within the loading screen
-    setTimeout(() => {
-        $(".current-playlist-embed").toggleClass("current-playlist-embed").hide();
-        $(`#${p}-iframe`).toggleClass("current-playlist-embed").show();
-    }, 160);
 });
