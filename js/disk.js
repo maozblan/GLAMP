@@ -39,3 +39,17 @@ $(".disk").click(function() {
         $(`#${p}-iframe`).toggleClass("current-playlist-embed").show();
     }, 160);
 });
+
+function startPlayback() {
+    // Get the iframe element of the embedded player
+    const iframe = document.querySelector('iframe');
+    console.log(iframe);
+  
+    // Post a message to the embedded player to start playback
+    iframe.contentWindow.postMessage('{"method": "play"}', 'https://open.spotify.com');
+}
+
+$('.grace-disk').click(function() {
+    console.log("disk clicked");
+    startPlayback();
+});
