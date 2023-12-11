@@ -5,7 +5,7 @@
 }
 
 div {
-    border: 1px solid var(--accent);
+    /* border: 1px solid var(--accent); */
     padding: 10px;
     box-sizing: border-box;
 }
@@ -387,12 +387,6 @@ h1, h2, h3 {
     cursor: pointer;
     z-index: 16;
 }
-
-.sticker.dragging {
-    opacity: 0.7; 
-    border: 2px solid #ff0000; /* add red border while dragging */
-}
-
 
 .sticker img {
     height: 100%;

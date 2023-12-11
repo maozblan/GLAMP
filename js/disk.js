@@ -39,7 +39,6 @@ $(".disk").click(function() {
     // embed the playlist and add <p> text
     $(".current-playlist").html(spotifyPlaylists[p]);
     $(".current-playlist-text").html("<p>currently playing: " + p + "'s playlist</p>");
-    $(".current-playlist-text").append("<p><strong>Careful!</strong> The music can be <strong>very</strong> loud!</p>");
 });
 
 

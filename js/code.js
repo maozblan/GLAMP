@@ -13,44 +13,42 @@ $(document).ready(function() {
     $('.current-corkboard-des').show();
 });
 
+// DOESNT WORK
 // click and drag functionality for stickers
-$(document).ready(function() {
-    // initializing tracking variable and offset
-    let isDragging = false;
-    let offsetX, offsetY;
+/* document.addEventListener('DOMContentLoaded', () => {
+    function setupDraggable(element) {
+        let isDragging = false;
+        let offsetX, offsetY;
 
-    $("#sticker-love, #sticker-happy, #sticker-sad, #sticker-angry").mousedown(function (e) {
-        isDragging = true;
-        offsetX = e.clientX - $(this).offset().left;
-        offsetY = e.clientY - $(this).offset().top;
-
-        // clone clicked sticker
-        let backgroundImage = $(this).css("background-image");
-        let imageSource = backgroundImage.replace(/^url\(['"](.+)['"]\)/, '$1');
-
-        if (typeof imageSource === "undefined" || imageSource === "none") {
-            console.error("Image source is undefined or not found.");
-            return;
-        }
-
-        let clone = $("<div class='sticker'></div>").css({
-            "background-image": "url(" + imageSource + ")",
-            "background-size": "cover"
-        });
-        clone.appendTo("#sticker-sheet");
-
-        // set initial cloned sticker position
-        clone.offset({
-            top: e.clientY - offsetY,
-            left: e.clientX - offsetX
+        element.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offsetX = e.clientX - element.getBoundingClientRect().left;
+            offsetY = e.clientY - element.getBoundingClientRect().top;
         });
 
-        // mouseup event for cloned sticker to prevent further cloning
-        clone.mouseup(function () {
+        document.addEventListener('mousemove', (e) => {
             if (isDragging) {
-                isDragging = false;
-                clone.removeClass("dragging");  // remove dragging class
+                const x = e.clientX - offsetX;
+                const y = e.clientY - offsetY;
+
+                element.style.left = `${x}px`;
+                element.style.top = `${y}px`;
             }
         });
-    }); 
-});
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+    }
+
+    // Apply the setupDraggable function to each sticker element
+    const stickerLove = document.getElementById('sticker-love');
+    const stickerHappy = document.getElementById('sticker-happy');
+    const stickerSad = document.getElementById('sticker-sad');
+    const stickerAngry = document.getElementById('sticker-angry');
+
+    setupDraggable(stickerLove);
+    setupDraggable(stickerHappy);
+    setupDraggable(stickerSad);
+    setupDraggable(stickerAngry);
+}); */
