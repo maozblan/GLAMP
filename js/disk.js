@@ -37,5 +37,5 @@ $(".disk").click(function() {
 
     // embed the playlist and add <p> text
     $(".current-playlist").html(`<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/${spotifyPlaylists[p]}?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`);
-    $(".current-playlist-text").html("<p>currently playing: " + p + "'s playlist</p>");
+    $(".current-playlist-text").html("<p>currently selected: " + p + "'s playlist</p>");
 });

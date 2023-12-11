@@ -290,7 +290,7 @@ h1, h2, h3 {
     z-index: 500;
     font-family: "Delicious Handrawn", cursive;
     font-size: 90%;
-    max-width: 330px;
+    width: 330px;
     height: fit-content;
     min-height: 300px;
     padding: 2%;
@@ -344,67 +344,4 @@ h1, h2, h3 {
 
 .confession:hover {
     filter: brightness(110%);
-}
-
-/* sticker sheet */
-#sticker-sheet {
-    position: relative;
-    display: flex;
-}
-
-.sticker-sheet-img {
-    height: 22vh;
-}
-
-#sticker-reactions-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 15;
-    /* to size the sticker-reactions box */
-    padding: 40% 15% 17% 15%;
-}
-
-#sticker-reactions {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    /* background-color: rgba(123, 65, 23, 0.5); */
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.sticker {
-    width: 40%;
-    height: fit-content;
-    padding: 0;
-    margin: 1%;
-    cursor: pointer;
-    z-index: 16;
-}
-
-.sticker img {
-    height: 100%;
-    width: 100%;
-}
-
-#sticker-love {
-    background-image: url("../img/stickersheet/love.png");
-}
-
-#sticker-happy {
-    background-image: url("../img/stickersheet/happy.png");
-}
-
-#sticker-sad {
-    background-image: url("../img/stickersheet/sad.png");
-}
-
-#sticker-angry {
-    background-image: url("../img/stickersheet/.png");
 }
